@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Index Page</title>
+  <link rel="stylesheet" href="/assets/_slug_-about-blog-index.4a013f0d.css" />
+<link rel="stylesheet" href="/assets/blog-index.cf514473.css" />
+<link rel="stylesheet" href="/assets/index.17002ca4.css" /></head>
+  <body>
+    <header class="header astro-D56DEKIL">
+    <div class="container astro-D56DEKIL">
+      <div class="logo astro-D56DEKIL">
+        <a href="/" class="astro-D56DEKIL">
+          <img src="/assets/logo.6498442f.svg" alt="" class="astro-D56DEKIL">
+        </a>
+      </div>
+      <nav class="astro-D56DEKIL">
+        <ul class="astro-D56DEKIL">
+          <li class="astro-D56DEKIL"><a href="/" class="astro-D56DEKIL">Home</a></li>
+          <li class="astro-D56DEKIL"><a href="/about" class="astro-D56DEKIL">About</a></li>
+          <li class="astro-D56DEKIL"><a href="/blog" class="astro-D56DEKIL">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <section class="showcase astro-WOQPJANA">
+    <div class="showcase-text astro-WOQPJANA">
+      <h1 class="astro-WOQPJANA">Welcome To The Astro Crash Course!</h1>
+      <p class="astro-WOQPJANA">
+        Build super fast HTML-first websites using your favorite JavaScript frameworks
+      </p>
+    </div>
+    <div class="showcase-img astro-WOQPJANA">
+      <img class="logos astro-WOQPJANA" src="/assets/framework-logos.c0e34b5b.png" alt="">
+      <img class="logos-small astro-WOQPJANA" src="/assets/framework-logos-small.ec62e422.png" alt="">
+    </div><p class="showcase-demo astro-WOQPJANA">
+      <small class="astro-WOQPJANA">This is a demo website used for the YouTube crash course</small>
+    </p>
+    
+  </section><section class="features astro-3HH7DOYR">
+    <div class="container astro-3HH7DOYR">
+      <div class="card false astro-WJVZ4HSP">
+    <h3 class="astro-3HH7DOYR">Zero Javascript runtime</h3><p class="astro-3HH7DOYR">Astro renders HTML on the server and strips away any remaining, unused JavaScript.</p>
+</div><div class="card false astro-WJVZ4HSP">
+    <h3 class="astro-3HH7DOYR">The Power of Islands</h3><p class="astro-3HH7DOYR">Need interactive UI? Load individual, non-blocking component islands in parallel.</p>
+</div><div class="card false astro-WJVZ4HSP">
+    <h3 class="astro-3HH7DOYR">Lazy-Loading Islands</h3><p class="astro-3HH7DOYR">Components only hydrate when they scroll into view. If you don&#39;t see it, Astro won&#39;t load it.</p>
+</div>
+    </div>
+  </section>
+  <!-- CSS --><section class="page-content">
+		<div class="container">
+		  <h2>Get Started With Astro</h2>
+		  <p>
+			Get a new Astro project up and running locally with our helpful
+			create-astro CLI wizard!
+		  </p>
+		  <!-- Tabs -->
+		  <div class="tabs astro-7R7WBFNM">
+    <ul class="tabs-header astro-7R7WBFNM">
+      <li class="astro-7R7WBFNM">NPM</li><li class="astro-7R7WBFNM">PNPM</li><li class="astro-7R7WBFNM">YARN</li>
+    </ul>
+    <ul class="tabs-content astro-7R7WBFNM">
+        <li class="tab astro-7R7WBFNM">
+                <code class="astro-7R7WBFNM">$ npm create astro@latest </code>
+            </li><li class="tab astro-7R7WBFNM">
+                <code class="astro-7R7WBFNM">$ pnpm create astro@latest </code>
+            </li><li class="tab astro-7R7WBFNM">
+                <code class="astro-7R7WBFNM">$ yarn create astro </code>
+            </li>
+    </ul>
+  </div>
+
+  
+
+  <script>{let activeTextColor = "#A741FF";
+
+    function createTabs(element) {
+  const header = element.querySelector('.tabs-header');
+  const content = element.querySelector('.tabs-content');
+  const tab_headers = [...header.children];
+  const tab_contents = [...content.children];
+  tab_contents.forEach((x) => (x.style.display = 'none'));
+  let current_tab_index = -1;
+
+  function setTab(index) {
+    if (current_tab_index > -1) {
+      tab_headers[current_tab_index].style.fontWeight = 400;
+      tab_headers[current_tab_index].style.color = '#fff';
+      tab_contents[current_tab_index].style.display = 'none';
+    }
+    tab_headers[index].style.fontWeight = 800;
+    tab_headers[index].style.color = activeTextColor;
+    tab_contents[index].style.display = 'flex';
+    current_tab_index = index;
+  }
+
+  let default_tab_index = tab_headers.findIndex((x) => {
+    return [...x.classList].indexOf('default-tab') > -1;
+  });
+
+  default_tab_index = default_tab_index === -1 ? 0 : default_tab_index;
+  setTab(default_tab_index);
+  tab_headers.forEach((x, i) => (x.onclick = (event) => setTab(i)));
+}
+
+// Run
+[...document.querySelectorAll('.tabs')].forEach((x) => createTabs(x));
+  }</script>
+  
+		  <h3>Start Building</h3>
+		  <p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
+			deserunt inventore ut voluptate, officia maiores repellat tenetur
+			praesentium omnis est ex tempora a necessitatibus reiciendis at et
+			dignissimos. Ipsam eius consequuntur cupiditate aperiam porro, esse
+			laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
+			iusto error molestias dolorum, necessitatibus labore?
+		  </p>
+		</div>
+	  </section>
+    <footer class="footer astro-CIBSKBKS">
+    <div class="container astro-CIBSKBKS">
+      <div class="astro-CIBSKBKS">
+        <h3 class="astro-CIBSKBKS">Astro</h3>
+        <p class="astro-CIBSKBKS">
+          This is a demo website to show how the Astro framework works. Visit
+          the <a href="https://astro.build" class="astro-CIBSKBKS">official website</a> to learn
+          more.
+        </p>
+      </div>
+      <div class="astro-CIBSKBKS">
+        <h3 class="astro-CIBSKBKS">Links</h3>
+        <ul class="astro-CIBSKBKS">
+          <li class="astro-CIBSKBKS"><a href="/" class="astro-CIBSKBKS">Home</a></li>
+          <li class="astro-CIBSKBKS"><a href="/about" class="astro-CIBSKBKS">About</a></li>
+          <li class="astro-CIBSKBKS"><a href="/blog" class="astro-CIBSKBKS">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </body></html>
